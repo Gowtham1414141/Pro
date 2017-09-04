@@ -29,7 +29,23 @@ public class TwoParts {
 			if(avg1==avg2)
 			{
 				flag=1;
-				System.out.println("["+str1+"],["+str2+"]");
+				System.out.print("[");
+				for(int k=0;k<str1.length();k++)
+				{
+					if(k!=0)
+					System.out.print(","+str1.charAt(k));
+					else
+					System.out.print(str1.charAt(k));
+				}
+				System.out.print("],[");
+				for(int k=0;k<str2.length();k++)
+				{
+					if(k!=0)
+					System.out.print(","+str2.charAt(k));
+					else
+					System.out.print(str2.charAt(k));
+				}
+				System.out.print("]");
 				break;
 			}
 		}
